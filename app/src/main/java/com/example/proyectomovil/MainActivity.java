@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 if(firebaseAuth.getCurrentUser()!=null){
 
                     startActivity(new Intent(MainActivity.this,InicioActivity.class));
+                    finish();
 
                 }
                 else {
@@ -79,6 +80,12 @@ public class MainActivity extends AppCompatActivity {
         mAuth.addAuthStateListener(mAuthListener);
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAuth.removeAuthStateListener(mAuthListener);
+    }
+
 
 
     private void LoginUsuario(){
@@ -103,8 +110,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
-                            startActivity(new Intent(MainActivity.this,InicioActivity.class));
-
+                            // navegación la hace mAuthListener
                         }
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the

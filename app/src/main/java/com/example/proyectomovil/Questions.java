@@ -50,7 +50,7 @@ public class Questions {
             {"D. Moviles","Penal","Matematicas","Ni idea"},
             {"Juan","Carlos","Julian","Santiago"},
             {"2","6","9","7"},
-            {"Tokio ","Cartagena","Brazilia","Guatemala"},
+            {"Tokio","Cartagena","Brazilia","Guatemala"},
             {"206","360","250","225"},
             {"Chocó","Medellin","Roma","Olimpia"},
             {"Nilo","Amazonas","Cauca","Atrato"},

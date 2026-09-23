@@ -40,7 +40,7 @@ public class RegistroActivity extends AppCompatActivity {
 
         //Referenciamos los views
         TextEmail = (EditText) findViewById(R.id.RtxtEmail);
-        TextPassword = (EditText) findViewById(R.id.RtxtContraseña);
+        TextPassword = (EditText) findViewById(R.id.RtxtContrasena);
 
         btnRegistrar = (Button) findViewById(R.id.RbtnRegistrar);
 

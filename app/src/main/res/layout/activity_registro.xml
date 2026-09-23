@@ -36,7 +36,7 @@
         android:backgroundTint="#F44336"/>
 
     <EditText
-        android:id="@+id/RtxtContraseña"
+        android:id="@+id/RtxtContrasena"
         android:layout_width="299dp"
         android:layout_height="58dp"
         android:layout_marginStart="8dp"
@@ -60,7 +60,7 @@
         android:text="REGISTRAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RtxtContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/RtxtContrasena"
         android:background="@drawable/button_roudend"/>
 
     <Button

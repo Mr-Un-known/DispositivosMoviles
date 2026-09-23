@@ -42,7 +42,7 @@ public class PreguntasActivity extends AppCompatActivity {
         Btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Btn1.getText() == mAnswer){
+                if (Btn1.getText().toString().trim().equals(mAnswer.trim())) {
                     mScore++;
                     score.setText("Puntos: "+mScore);
                     updateQuestion(r.nextInt(mQuestionsLenght));
@@ -55,7 +55,7 @@ public class PreguntasActivity extends AppCompatActivity {
         Btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Btn2.getText() == mAnswer){
+                if (Btn2.getText().toString().trim().equals(mAnswer.trim())) {
                     mScore++;
                     score.setText("Puntos: "+mScore);
                     updateQuestion(r.nextInt(mQuestionsLenght));
@@ -68,7 +68,7 @@ public class PreguntasActivity extends AppCompatActivity {
         Btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Btn3.getText() == mAnswer){
+                if (Btn3.getText().toString().trim().equals(mAnswer.trim())) {
                     mScore++;
                     score.setText("Puntos: "+mScore);
                     updateQuestion(r.nextInt(mQuestionsLenght));
@@ -80,7 +80,7 @@ public class PreguntasActivity extends AppCompatActivity {
         Btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Btn4.getText() == mAnswer){
+                if (Btn4.getText().toString().trim().equals(mAnswer.trim())) {
                     mScore++;
                     score.setText("Puntos: "+mScore);
                     updateQuestion(r.nextInt(mQuestionsLenght));
